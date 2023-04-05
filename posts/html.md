@@ -18,7 +18,7 @@ HTML, or Hypertext Markup Language, is a standardized system for organizing and 
 
 An HTML document consists of a root element (<!DOCTYPE html>) followed by an opening <html> tag, a <head> section, a <body> section, and a closing </html> tag.
 
-<!DOCTYPE html>
+"<!DOCTYPE html>
 <html>
 <head>
   <!-- Metadata and links to stylesheets and scripts go here -->
@@ -26,19 +26,19 @@ An HTML document consists of a root element (<!DOCTYPE html>) followed by an ope
 <body>
   <!-- All visible content goes here -->
 </body>
-</html>
+</html>"
 
 ## Tags and Elements
 
 Tags are the primary building blocks of HTML. They are used to define and structure content on a webpage. Most HTML tags come in pairs: an opening tag "(<tagname>)" and a closing tag "(</tagname>)." An HTML element consists of an opening tag, the content, and a closing tag.
 
 Some common HTML tags include:
-- <h1> to <h6>: Heading tags used for titles and subtitles.
-- <p>: Paragraph tag for defining paragraphs.
-- <a>: Anchor tag for creating hyperlinks.
-- <img>: Image tag for displaying images.
-- <ul> and <ol>: Unordered and ordered list tags for creating lists.
-- <li>: List item tag for defining items in a list.
+- "<h1> to <h6>": Heading tags used for titles and subtitles.
+- "<p>": Paragraph tag for defining paragraphs.
+- "<a>": Anchor tag for creating hyperlinks.
+- "<img>": Image tag for displaying images.
+- "<ul> and <ol>": Unordered and ordered list tags for creating lists.
+- "<li>": List item tag for defining items in a list.
 
 ## Attributes
 
@@ -52,12 +52,12 @@ Attributes provide additional information about an element and are placed within
 ## Semantic Elements
 
 Semantic elements are HTML tags that convey meaning about the content they contain. Some examples of semantic elements are:
-- <header>: Represents the header of a webpage or section.
-- <nav>: Contains navigation links for a website.
-- <article>: Represents an independent piece of content like a blog post or news article.
-- <section>: Represents a generic section of content.
-- <aside>: Represents content related to the main content but separate from it, like a sidebar.
-- <footer>: Represents the footer of a webpage or section.
+- "<header>": Represents the header of a webpage or section.
+- "<nav>": Contains navigation links for a website.
+- "<article>": Represents an independent piece of content like a blog post or news article.
+- "<section>": Represents a generic section of content.
+- "<aside>": Represents content related to the main content but separate from it, like a sidebar.
+- "<footer>": Represents the footer of a webpage or section.
 
 ## Conclusion
 
