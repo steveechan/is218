@@ -6,59 +6,59 @@ author: "Stephen Chan"
 date: "2023/04/01"
 ---
 
-# HTML
+# Demystifying HTML: The Most Important Topics Explained
 
-## Nomine nubes gramine monstri
+In the digital world, the foundation of any website is Hypertext Markup Language, better known as HTML. As the backbone of web content, anyone interested in web development must have a solid understanding of HTML. This blog post will cover the essential topics of HTML, including its structure, tags, elements, attributes, and more. Let's dive in!
 
-Lorem markdownum meum furoribus atque obscuraque, pugnae nupsi, et. Rura
-dolorem, fit illa eversam fluidove quod tuo terris pudor cognoscere in turba
-calet aditum vultuque leve domum. Peregrinis stipe admissa famulus sed negant,
-quaerenti illa. *Arsit dixi* ille absens torum peiora demunt, ne Iovis scopulis
-miserrima. Belides funere his illi nota deo digitos siquid.
+## What is HTML
 
-- Nec magni Caucason crimen
-- Neque mea verum saepe dicitur
-- Erit nigro nam et mariti rupibus Phoebus
-- Voluptas Neptunia dixit
-- Tu cupidine mihi posse
+HTML, or Hypertext Markup Language, is a standardized system for organizing and tagging text, images, and other elements on a webpage. It uses a system of tags to instruct web browsers how to display content, enabling users to view and interact with web pages as intended. HTML is a markup language, not a programming language, meaning it doesn't have the same level of functionality as languages like JavaScript or Python.
 
-## Ergo est coegi rector
+## HTML Structure
 
-Abstulit quisquam: senior, sonum contigit illam non sed Procris hoc solis passu.
-Ore illi caedis, qui venienti languor quaeque fidissima corpora iaculo, multa
-trux humilem? Liceat ambo [disce quoque](http://equo-scrobe.com/ora.html)
-mediis. Flamma stipes Cydoneasque partim datum Stygia venefica **ante ignotis
-servas** aere utilis. De sereno sensus, sexangula potitur sepulta cur brevis
-frustra: est maenala et reparabile Atlas illos discrimine in.
+An HTML document consists of a root element (<!DOCTYPE html>) followed by an opening <html> tag, a <head> section, a <body> section, and a closing </html> tag.
 
-## Inminet inclusos timide crepitantia lumina haeserat generosam
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Metadata and links to stylesheets and scripts go here -->
+</head>
+<body>
+  <!-- All visible content goes here -->
+</body>
+</html>
 
-Sacra miscent, Iuppiter crura *ferarum Idaque ignes* ipse faciem laeva. Sede per
-at, Quid huic, Lapitheia atria tetigere, gementis iniquis senior; ferens in
-petis excipit nondum? Addere iuppiter et meus non, stat vires decuit in ni
-super. Est membraque agmina hic lecto instat; humo rapta: et anhelis pactaque.
+## Tags and Elements
 
-## Nec misit Erectheas totaque dictis
+Tags are the primary building blocks of HTML. They are used to define and structure content on a webpage. Most HTML tags come in pairs: an opening tag (<tagname>) and a closing tag (</tagname>). An HTML element consists of an opening tag, the content, and a closing tag.
 
-Nostros limite forem revulsos; odores fluvialis furtis tulerunt functus
-geminasque dicta patiuntur in! Pessima manebant ore! Utile hoc crimen Cumaeae in
-tantum relatis manu illa fit; nigra proboque tendens frater.
+Some common HTML tags include:
+- <h1> to <h6>: Heading tags used for titles and subtitles.
+- <p>: Paragraph tag for defining paragraphs.
+- <a>: Anchor tag for creating hyperlinks.
+- <img>: Image tag for displaying images.
+- <ul> and <ol>: Unordered and ordered list tags for creating lists.
+- <li>: List item tag for defining items in a list.
 
-## Ad Pylio evolvere non solvit scopulos extulit
+## Attributes
 
-Suo feror increpat mens. Superare sed pulso **classe Athenae** calcatis lege;
-nec victricemque secto palude, Spercheides, in flamma **mirantur** Aurora. Exit
-est reddidit meum animos, praetentaque nunc: excidit inposuit lusibus laqueique
-flammam hic via, ac.
+Attributes provide additional information about an element and are placed within the opening tag. Some common attributes are:
 
-- Propiore Aurora pedibus penetralia legit
-- Radix montibus nutrix semine
-- Subiectis formosa vera corpora hortaturque mihi remis
-- Undis ne
-- Cuius conceperat et adsueta in tegit fuit
-- Mnemosynen Perimelen litore nec sonant
+- href: Specifies the URL of a linked resource (used with the <a> tag).
+- src: Specifies the URL of an image (used with the <img> tag).
+- alt: Provides alternative text for an image (used with the <img> tag).
+- class and id: Used for styling and targeting elements with CSS and JavaScript.
 
-*Fusus* haec futuri populis, mihi nec per et graviore litora iniecique cessit.
-Equo aliquem vale liquidas? Tot sibi habet gaudia ut enim. Penitus caespite
-potentem, concussaque regnata auctor, ipsa [esset](http://veri.net/), quas; nec
-recens, custos.
+## Semantic Elements
+
+Semantic elements are HTML tags that convey meaning about the content they contain. Some examples of semantic elements are:
+- <header>: Represents the header of a webpage or section.
+- <nav>: Contains navigation links for a website.
+- <article>: Represents an independent piece of content like a blog post or news article.
+- <section>: Represents a generic section of content.
+- <aside>: Represents content related to the main content but separate from it, like a sidebar.
+- <footer>: Represents the footer of a webpage or section.
+
+## Conclusion
+
+Understanding the basics of HTML is essential for anyone looking to build or maintain websites. You can create well-structured and easily navigable web pages by familiarizing content using HTML tags, elements, and attributes. The introduction of HTML5 has further enriched the capabilities of the language, providing a solid foundation for creating modern and interactive websites. As you continue to learn and experiment with HTML, you will discover its versatility and its crucial role in web development. Happy coding!
