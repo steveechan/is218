@@ -30,7 +30,7 @@ An HTML document consists of a root element (<!DOCTYPE html>) followed by an ope
 
 ## Tags and Elements
 
-Tags are the primary building blocks of HTML. They are used to define and structure content on a webpage. Most HTML tags come in pairs: an opening tag (<tagname>) and a closing tag (</tagname>). An HTML element consists of an opening tag, the content, and a closing tag.
+Tags are the primary building blocks of HTML. They are used to define and structure content on a webpage. Most HTML tags come in pairs: an opening tag "(<tagname>)" and a closing tag "(</tagname>)." An HTML element consists of an opening tag, the content, and a closing tag.
 
 Some common HTML tags include:
 - <h1> to <h6>: Heading tags used for titles and subtitles.
