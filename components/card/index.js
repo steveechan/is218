@@ -11,7 +11,7 @@ export default function Card({ title, description, link }) {
       <div className="p-1">
         <article className="w-full min-h-[250px]  rounded relative">
           <Image
-            src="/images/cardImage.jpg"
+            src="https://raw.githubusercontent.com/NJIT-WIS/project-2-george-s-prompt-engineers/main/public/images/cardImage.jpg?token=GHSAT0AAAAAACAPJYAURHLKDZHKNE6PASSQZBM6MTA"
             alt="nice"
             fill
             className="rounded-t w-full object-cover rounded"
