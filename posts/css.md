@@ -8,57 +8,49 @@ date: "2023/04/01"
 
 # CSS
 
-## Nomine nubes gramine monstri
+## CSS Fundamentals: 4 Key Concepts for Every Web Developer
 
-Lorem markdownum meum furoribus atque obscuraque, pugnae nupsi, et. Rura
-dolorem, fit illa eversam fluidove quod tuo terris pudor cognoscere in turba
-calet aditum vultuque leve domum. Peregrinis stipe admissa famulus sed negant,
-quaerenti illa. *Arsit dixi* ille absens torum peiora demunt, ne Iovis scopulis
-miserrima. Belides funere his illi nota deo digitos siquid.
+Cascading Style Sheets (CSS) is a cornerstone technology of the web, responsible for styling and layout of web pages. CSS allows you to create visually appealing and responsive designs, ensuring a consistent and engaging user experience. In this blog post, we will explore four of the most important CSS topics: selectors, properties and values, the box model, and responsive design. Mastering these core concepts will help you build a strong foundation in CSS.
 
-- Nec magni Caucason crimen
-- Neque mea verum saepe dicitur
-- Erit nigro nam et mariti rupibus Phoebus
-- Voluptas Neptunia dixit
-- Tu cupidine mihi posse
+## Selectors
 
-## Ergo est coegi rector
+Selectors are the foundation of CSS, allowing you to target specific HTML elements and apply styles to them. There are several types of selectors in CSS, including:
 
-Abstulit quisquam: senior, sonum contigit illam non sed Procris hoc solis passu.
-Ore illi caedis, qui venienti languor quaeque fidissima corpora iaculo, multa
-trux humilem? Liceat ambo [disce quoque](http://equo-scrobe.com/ora.html)
-mediis. Flamma stipes Cydoneasque partim datum Stygia venefica **ante ignotis
-servas** aere utilis. De sereno sensus, sexangula potitur sepulta cur brevis
-frustra: est maenala et reparabile Atlas illos discrimine in.
+- Element selectors: Target elements based on their HTML tag (e.g., `p`, `h1`, `div`).
+- Class selectors: Target elements with a specific class attribute (e.g., `.classname`).
+- ID selectors: Target elements with a specific ID attribute (e.g., `#elementID`).
+- Attribute selectors: Target elements based on their attributes (e.g., `[attribute]`, `[attribute=value]`).
+- Pseudo-classes and pseudo-elements: Target elements based on their state or structure (e.g., `:hover`, `::before`, `::after`).
 
-## Inminet inclusos timide crepitantia lumina haeserat generosam
+## Properties and Values
 
-Sacra miscent, Iuppiter crura *ferarum Idaque ignes* ipse faciem laeva. Sede per
-at, Quid huic, Lapitheia atria tetigere, gementis iniquis senior; ferens in
-petis excipit nondum? Addere iuppiter et meus non, stat vires decuit in ni
-super. Est membraque agmina hic lecto instat; humo rapta: et anhelis pactaque.
+Once you have targeted an element using a selector, you can apply styles to it by defining CSS properties and values. Properties control specific aspects of an element's appearance, such as color, size, and layout. Each property has a corresponding value or set of values that define how the property should be applied.
 
-## Nec misit Erectheas totaque dictis
+For example, to set the font size of a paragraph to 16 pixels, you would use the following CSS rule:
 
-Nostros limite forem revulsos; odores fluvialis furtis tulerunt functus
-geminasque dicta patiuntur in! Pessima manebant ore! Utile hoc crimen Cumaeae in
-tantum relatis manu illa fit; nigra proboque tendens frater.
+`p {
+  font-size: 16px;
+}`
 
-## Ad Pylio evolvere non solvit scopulos extulit
+## The Box Model
 
-Suo feror increpat mens. Superare sed pulso **classe Athenae** calcatis lege;
-nec victricemque secto palude, Spercheides, in flamma **mirantur** Aurora. Exit
-est reddidit meum animos, praetentaque nunc: excidit inposuit lusibus laqueique
-flammam hic via, ac.
+The CSS box model is a fundamental concept that describes how elements are rendered on a web page. It consists of four layers: content, padding, border, and margin. Understanding the box model is essential for controlling the layout and appearance of elements on your page.
 
-- Propiore Aurora pedibus penetralia legit
-- Radix montibus nutrix semine
-- Subiectis formosa vera corpora hortaturque mihi remis
-- Undis ne
-- Cuius conceperat et adsueta in tegit fuit
-- Mnemosynen Perimelen litore nec sonant
+- Content: The actual content of the element, such as text or images.
+- Padding: The space between the content and the border.
+- Border: The boundary surrounding the padding and content.
+- Margin: The space between the border and neighboring elements.
 
-*Fusus* haec futuri populis, mihi nec per et graviore litora iniecique cessit.
-Equo aliquem vale liquidas? Tot sibi habet gaudia ut enim. Penitus caespite
-potentem, concussaque regnata auctor, ipsa [esset](http://veri.net/), quas; nec
-recens, custos.
+## Responsive Design
+
+Responsive design is an approach to web design that ensures your website looks good and functions properly on a variety of devices and screen sizes. With responsive design, you can create a single, flexible layout that adapts to different devices, providing an optimal user experience.
+
+Key concepts and techniques for responsive design include:
+
+- Fluid grids: Use relative units (e.g., percentages, `em`, `rem`) instead of fixed units (e.g., pixels) to create flexible layouts that adapt to different screen sizes.
+- Media queries: Apply different CSS rules based on specific conditions, such as screen width, device orientation, or display type.
+- Flexible images and media: Ensure images and other media scale properly on different devices by setting their widths to 100% or using the `max-width` property.
+
+## Conclusion
+
+By mastering these four key CSS concepts, you will be well on your way to creating visually stunning and responsive web designs. As you continue to learn and explore CSS, you will discover new techniques and best practices that will enable you to create more engaging and user-friendly web experiences. Keep learning and experimenting, and happy designing!
