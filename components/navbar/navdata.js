@@ -3,6 +3,7 @@ export const navData = [
     name: "Agile & Lean principles",
     children: [],
     isCollapsible: false,
+    slug: "/agile-and-lean-principles",
   },
   {
     name: "Blog",

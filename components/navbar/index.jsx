@@ -11,20 +11,20 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="w-full border-b border-b-sage-main/20">
-      <div className=" mx-auto p-4 flex justify-between items-center">
-        <Link href="/" className="text-sm">
+      <div className=" mx-auto p-6 flex justify-between items-center">
+        <Link href="/" className="text-sm font-bold">
           MyWebclass.org
         </Link>
-        <ul className=" items-center gap-4 text-sm 2xl:flex xl:flex lg:flex  hidden">
+        <ul className=" items-center space-x-4 text-sm 2xl:flex xl:flex lg:flex  hidden">
    
           {navData.map((data) => data.isCollapsible ? <NavPopover name={data.name} content={data.children} slug={data.slug} key={`main-${data.name}`} /> : 
             <Link
-              href="/"
+              href={data.slug}
               className={` ${
                 asPath.includes(`/${data.name}`)
-                  ? "font-semibold "
+                  ? "text-sage-accent2  "
                   : null
-              } transition-colors`}
+              } hover:text-sage-accent2 transition-colors`}
               key={`main-${data.name}`}
             >
               {data.name}
@@ -41,7 +41,7 @@ export default function Navbar() {
               <div className="absolute right-0 bg-sage-main p-4 rounded space-y-4 text-right flex flex-col mt-2">
                 {/* <NavPopover /> */}
                 
-                {navData.map((data) => data.isCollapsible ? <NavCollapsible name={data.name} contents={data.children} key={data.name} /> : <Link href="/" className="text-sm font-semibold text-right" key={data.name}>{data.name}</Link>)}
+                {navData.map((data) => data.isCollapsible ? <NavCollapsible name={data.name} contents={data.children} key={data.name} /> : <Link href="/" className="text-sm  text-right hover:text-sage-accent1" key={data.name}>{data.name}</Link>)}
               </div> 
             </>
           ) : null}

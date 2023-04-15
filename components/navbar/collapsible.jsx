@@ -7,10 +7,10 @@ export const NavCollapsible = ({name, contents}) => {
 
     return <Collapsible.Root open={open} onOpenChange={setOpen}>
         <div  className="flex gap-2 text-sm flex-col min-w-[200px] items-end">
-              <Collapsible.Trigger asChild>
+              <Collapsible.Trigger asChild className="hover:text-sage-accent1">
              
-                    <button className="flex gap-2 items-center">
-                    <span className={`${open ? 'font-bold' : 'font-semibold'}`}>
+                    <button className="flex gap-2 items-center ">
+                    <span className={`${open ? 'text-sage-accent1' : ''}`}>
                         {name}
                     </span>
             
