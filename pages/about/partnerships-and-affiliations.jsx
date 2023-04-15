@@ -14,15 +14,15 @@ const PartnershipsAndAffiliations = () => {
          <div className="mt-8 ">
           <button className="flex items-center gap-2 text-sm  bg-sage-main px-8 py-4 rounded-full">
                 Join our network <AiOutlineSwapRight />{" "}
-              </button>
+            </button>
          </div>
          <div className="space-y-4">
             <h4 className="font-bold">Trusted by:  </h4>
             <ul className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(100px,1fr))]">
-                <li><img src={"/images/sample-logo.webp"} width={100} height={100} /></li>
-                 <li><img src={"/images/sample-logo.webp"} width={100} height={100} /></li>
-                  <li><img src={"/images/sample-logo.webp"} width={100} height={100} /></li>
-                   <li><img src={"/images/sample-logo.webp"} width={100} height={100} /></li>
+                <li><img src={"/images/sample-logo.webp"} width={100} height={100} alt="company-logo" /></li>
+                 <li><img src={"/images/sample-logo.webp"} width={100} height={100} alt="company-logo"/></li>
+                  <li><img src={"/images/sample-logo.webp"} width={100} height={100} alt="company-logo"/></li>
+                   <li><img src={"/images/sample-logo.webp"} width={100} height={100} alt="company-logo"/></li>
             </ul>
          </div>
         </div>
