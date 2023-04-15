@@ -38,7 +38,7 @@ const CoreValueCard = ({title, description}) => {
 const MissionAndValues = () => {
   return (
   <>
-  <div className="bg-sage-main">
+  <div className="bg-sage-secondary">
     <PageLayout>
       <section className="w-full p-4 mx-auto space-y-24">
         <div>
@@ -78,8 +78,8 @@ const MissionAndValues = () => {
         <section className="p-4">
          <div className="space-y-12 container mx-auto py-12">
             <h4 className="text-2xl font-bold">Our Core Values</h4>
-              <ul className=" grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-12">
-                    {coreValues.map(values => <CoreValueCard {...values} />)}
+              <ul className=" grid 2xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] grid-cols-1 gap-12">
+                    {coreValues.map(values => <CoreValueCard {...values} key={values.title + "-items"} />)}
               </ul>
         </div>
         </section>

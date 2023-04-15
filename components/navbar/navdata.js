@@ -39,7 +39,6 @@ export const navData = [
   {
     name: "About",
     children: [
-      { name: "About Us", slug: "/about/about-us" },
       { name: "Mission and Values", slug: "/about/mission-and-values" },
       { name: "Meet our Team", slug: "/about/meet-our-team" },
       {

@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         sage: {
-          main: "#1a2722",
+          main: "#3D5A4F",
+          secondary: "#1a2722",
           accent1: "#8BC4A4",
           accent2: "#B6D3BB",
           accent3: "#F0F0E8",
