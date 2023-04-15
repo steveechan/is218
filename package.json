@@ -7,6 +7,8 @@
     "test": "npx playwright test"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "@radix-ui/react-collapsible": "^1.0.2",
     "cobe": "^0.6.3",
     "csv-parser": "^3.0.0",
     "date-fns": "^2.29.3",
@@ -27,6 +29,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "lighthouse": "^10.1.0",
+    "next-i18next": "^13.2.2",
     "node-fetch": "^3.3.1",
     "playwright": "^1.32.1",
     "playwright-lighthouse": "^3.0.0",
