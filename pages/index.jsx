@@ -1,16 +1,21 @@
 import Head from "next/head";
-// import Card from "@/components/card";
-// import { getSortedPostsData } from "../lib/posts";
+import { Button } from "../components/common/button";
 import { useRef, useEffect } from "react";
 import createGlobe from "cobe";
-// import { posts } from "@/lib/data";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+export const getStaticProps= async ({
+  locale,
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'en', [
+      'common',
+      'homepage'
+    ])),
+  },
+})
 
-// export async function getStaticProps() {
-//   const posts = getSortedPostsData();
-//   return { props: { posts: posts } };
-// }
-
-export default function Home({ posts }) {
+export default function Home(props) {
   const canvasRef = useRef();
   useEffect(() => {
     let phi = 0;
@@ -26,9 +31,9 @@ export default function Home({ posts }) {
       mapSamples: 12000,
       mapBrightness: 4,
       opacity: 1,
-      baseColor: [0.3, 0.3, 0.3],
+      baseColor: [0.3, 0.4, 0.3],
       markerColor: [1.5, 1.5, 1.5],
-      glowColor: [0.2, 0.2, 0.2],
+      glowColor: [0.3, 0.4, 0.3],
       markers: [
         // longitude latitude
         { location: [37.7595, -122.4367], size: 0.03 },
@@ -45,6 +50,8 @@ export default function Home({ posts }) {
       globe.destroy();
     };
   }, []);
+   const {t} = useTranslation();
+
   return (
     <>
       <Head>
@@ -60,22 +67,18 @@ export default function Home({ posts }) {
           <div className="max-w-2xl space-y-8 p-4 2xl:text-left xl:text-left lg:text-left md:text-left text-center">
             <h1 className="2xl:text-7xl xl:text-7xl lg:text-6xl text-4xl font-black break-words ">
               <span className=" text-sage-accent1 leading-normal">
-                Empowering
+                {t("homepage:heroHighlighted")}
               </span>{" "}
-              <span className="leading-normal">the future of education</span>
+              <span className="leading-normal">{t("homepage:heroText")}</span>
             </h1>
             <p
               className="leading-relaxed text-sage-accent3/60 
             2xl:text-base xl:text-base lg:text-base text-sm
             "
             >
-              Revolutionizing education by incorporating Agile and Lean
-              principles into the classroom, fostering a culture of continous
-              improvement, collaboration, and adaptability
+              {t("homepage:description")}
             </p>
-            <button className="bg-sage-main py-4 px-8 rounded-full text-sm font-bold text-sage-accent3 border border-sage-accent1">
-              Volunteer Now!
-            </button>
+            <Button text={t("homepage:heroButton")} />
           </div>
           <div className="2xl:relative xl:relative lg:relative md:relative absolute -z-10 right-0 mx-auto w-fit">
             <canvas
