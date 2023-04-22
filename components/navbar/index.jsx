@@ -5,7 +5,7 @@ import { AiOutlineSwapRight, AiOutlineMenu } from "react-icons/ai";
 import { BsArrowUpRight} from 'react-icons/bs'
 import { useState } from "react";
 import { NavCollapsible } from "./collapsible";
-import { navData } from "./navdata";
+import { navData } from "../../lib/data/navdata";
 import { useTranslation } from "next-i18next";
 
 

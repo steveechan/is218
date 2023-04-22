@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import createGlobe from "cobe";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useRouter } from "next/router";
+import { MetaHeader } from "../components/common/metaHeader";
 export const getStaticProps= async ({
   locale,
 }) => ({
@@ -55,14 +55,18 @@ export default function Home(props) {
 
   return (
     <>
-      <Head>
+    <MetaHeader
+        title="MyWebclass.org"
+        description={t("homepage:description")}
+    />
+      {/* <Head>
         <title>MyWebclass.org</title>
         <meta
           name="description"
-          content={`${t("homepage:heroHighlighted")} ${t("homepage:heroText")}`}
+          content={`${t("homepage:description")}`}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      </Head> */}
       <main className="container mx-auto my-12  h-[80vh] grid place-items-center relative">
         <section className="flex justify-between items-center w-full  relative">
           <div className="max-w-2xl space-y-8 p-4 2xl:text-left xl:text-left lg:text-left md:text-left text-center">
