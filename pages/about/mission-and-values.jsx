@@ -2,6 +2,7 @@ import { AiOutlineSwapRight } from "react-icons/ai";
 import { PageLayout } from "../../components/layout";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { CoreValueCard } from "../../components/card/coreValueCard";
+import { MetaHeader } from "../../components/common/metaHeader";
 
 
 const coreValues = [{
@@ -34,6 +35,10 @@ const coreValues = [{
 const MissionAndValues = () => {
   return (
   <>
+   <MetaHeader
+        title="Mission and Values"
+        description={"Revolutionizing education by incorporating Agile and Lean principles into the classroom, fostering a culture of continuous improvement, collaboration, and adaptability"}
+    />
   <div className="bg-sage-secondary">
     <PageLayout>
       <section className="w-full p-4 mx-auto space-y-24">
@@ -46,9 +51,7 @@ const MissionAndValues = () => {
             <div className="max-w-4xl">
               <p className="text-2xl   leading-loose">
                 <span className="text-sage-accent2">Revolutionizing</span>{" "}
-                education by incorporating Agile and Lean principles into the
-                classroom, fostering a culture of continuous improvement,
-                collaboration, and adaptability
+               education by incorporating Agile and Lean principles into the classroom, fostering a culture of continuous improvement, collaboration, and adaptability
               </p>
               <button className="mt-4 flex items-center gap-2 text-sm text-sage-accent2">
                 Volunteer Now <AiOutlineSwapRight />{" "}

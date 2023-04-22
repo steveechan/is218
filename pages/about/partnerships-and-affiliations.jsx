@@ -1,10 +1,16 @@
 import { PageLayout } from "../../components/layout";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { MetaHeader } from "../../components/common/metaHeader";
 const PartnershipsAndAffiliations = () => {
 
 
-    return <PageLayout>
+    return <>
+     <MetaHeader
+        title="Partnerships and Affiliations"
+        description={"A Strong Network of Trusted Experts Who Share Our Vision for Agile and Lean Excellence"}
+    />
+    <PageLayout>
         <div className="max-w-4xl space-y-8 mx-auto p-4">
        <div>
          <p className="text-sage-accent1">Partnerships and Affiliations</p>
@@ -27,6 +33,7 @@ const PartnershipsAndAffiliations = () => {
          </div>
         </div>
     </PageLayout>
+    </>
 }
 export default PartnershipsAndAffiliations;
 

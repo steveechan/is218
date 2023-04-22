@@ -1,6 +1,8 @@
 import { TeamCard } from "../../components/card/teamCard";
+import { MetaHeader } from "../../components/common/metaHeader";
 import { PageLayout } from "../../components/layout";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 
 const teamMembers = [{
     memberName:"Mr. Miyagi",
@@ -26,6 +28,11 @@ const teamMembers = [{
 
 const MeetOurTeam = () => {
   return (
+  <>
+      <MetaHeader
+        title="Meet our team"
+        description={"Meet our team of creators, designers, and problem solvers"}
+    />
     <PageLayout>
       <div className="p-4 space-y-24">
         <h1 className="2xl:text-6xl xl:text-6xl lg:text-6xl md:text-6xl text-5xl font-black max-w-4xl text-center leading-normal mx-auto">
@@ -36,6 +43,7 @@ const MeetOurTeam = () => {
         </div>
       </div>
     </PageLayout>
+    </>
   );
 };
 
