@@ -4,6 +4,7 @@ import { useRef, useEffect } from "react";
 import createGlobe from "cobe";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useRouter } from "next/router";
 export const getStaticProps= async ({
   locale,
 }) => ({
@@ -58,7 +59,7 @@ export default function Home(props) {
         <title>MyWebclass.org</title>
         <meta
           name="description"
-          content="Here you will learn Math from yours truly, MyWebclass.org"
+          content={`${t("homepage:heroHighlighted")} ${t("homepage:heroText")}`}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

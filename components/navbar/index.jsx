@@ -12,8 +12,10 @@ import { useTranslation } from "next-i18next";
 export default function Navbar() {
   const { asPath } = useRouter();
   const [isOpen, setIsOpen] = useState(false);
-  const {t} = useTranslation();
+  const {t, i18n} = useTranslation();
   const navName = t("common:navKeys", {returnObjects: true});
+  const router = useRouter();
+   
   return (
     <nav className="w-full border-b border-b-sage-main/20">
       <div className=" mx-auto px-6 py-4 flex justify-between items-center">
@@ -38,11 +40,21 @@ export default function Navbar() {
           )}
         </ul>
       </div>
-      <div className="2xl:block xl:block lg:block  hidden">
+      <div className="2xl:flex xl:flex lg:flex items-center gap-4  hidden">
         <Link href={"/"} className="text-xs flex items-center gap-2 bg-sage-main px-4 py-3 rounded-full">
       {  t("common:navCallToAction")}
         <AiOutlineSwapRight />
         </Link>
+        <span>|</span>
+        <div>
+            <NavPopover name={"Lang"} content={[{
+                slug: `en`,
+                name:"EN"
+            },{
+                slug:`es`,
+                name:"ES"
+            }]} slug={"/"} key={`main-${"en"}`} position="right" width={25}onClick={"switch"} />
+        </div>
       </div>
 
         <div className="2xl:hidden xl:hidden lg:hidden block relative z-20">

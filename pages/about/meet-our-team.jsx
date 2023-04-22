@@ -1,5 +1,6 @@
+import { TeamCard } from "../../components/card/teamCard";
 import { PageLayout } from "../../components/layout";
-
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const teamMembers = [{
     memberName:"Mr. Miyagi",
@@ -20,18 +21,8 @@ const teamMembers = [{
 }
 ]
 
-const TeamCard = ({ memberName, position }) => {
-  return (
-    <div className="space-y-4">
-      <div className="w-[300px] h-[300px] bg-sage-main rounded">
-      </div>
-      <div className="space-y-2">
-        <h4 className="text-lg font-bold">{memberName}</h4>
-        <p>{position}</p>
-      </div>
-    </div>
-  );
-};
+
+
 
 const MeetOurTeam = () => {
   return (
@@ -49,3 +40,13 @@ const MeetOurTeam = () => {
 };
 
 export default MeetOurTeam;
+
+export const getStaticProps= async ({
+  locale,
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'en', [
+      'common',
+    ])),
+  },
+})

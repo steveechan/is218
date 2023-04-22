@@ -1,6 +1,6 @@
 import { PageLayout } from "../../components/layout";
 import { AiOutlineSwapRight } from "react-icons/ai";
-
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 const PartnershipsAndAffiliations = () => {
 
 
@@ -29,3 +29,14 @@ const PartnershipsAndAffiliations = () => {
     </PageLayout>
 }
 export default PartnershipsAndAffiliations;
+
+export const getStaticProps= async ({
+  locale,
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'en', [
+      'common',
+
+    ])),
+  },
+})

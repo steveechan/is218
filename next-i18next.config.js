@@ -8,7 +8,8 @@ module.exports = {
     debug: process.env.NODE_ENV === 'development',
     i18n: {
         defaultLocale: 'en',
-        locales: ['en', 'es'],
+        locales: ['en', 'es',],
+        localeDetection: true
     },
     /** To avoid issues when deploying to some paas (vercel...) */
     localePath:
@@ -17,6 +18,7 @@ module.exports = {
             : '/locales',
 
     reloadOnPrerender: process.env.NODE_ENV === 'development',
+
 
     /**
      * @link https://github.com/i18next/next-i18next#6-advanced-configuration

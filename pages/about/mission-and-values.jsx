@@ -1,5 +1,8 @@
 import { AiOutlineSwapRight } from "react-icons/ai";
 import { PageLayout } from "../../components/layout";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { CoreValueCard } from "../../components/card/coreValueCard";
+
 
 const coreValues = [{
     title: "Innovation",
@@ -25,14 +28,7 @@ const coreValues = [{
 
 ]
 
-const CoreValueCard = ({title, description}) => {
-    return      <li className="space-y-4">
-                  <h4 className=" text-sage-accent2 text-xl">{title}</h4>
-                  <p className="leading-loose">
-                    {description}
-                  </p>
-                </li>
-}
+
 
 
 const MissionAndValues = () => {
@@ -88,3 +84,13 @@ const MissionAndValues = () => {
 };
 
 export default MissionAndValues;
+
+export const getStaticProps= async ({
+  locale,
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'en', [
+      'common',
+    ])),
+  },
+})
