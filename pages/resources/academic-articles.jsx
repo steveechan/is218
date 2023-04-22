@@ -8,7 +8,9 @@ import { MetaHeader } from "../../components/common/metaHeader";
 const ArticleCard = ({ title, link }) => {
   return (
     <div>
-      <h3 className="text-4xl font-normal leading-loose    w-fit">
+      <h3 className="2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl text-2xl font-normal 
+        2xl:leading-loose xl:leading-loose lg:leading-loose leading-loose
+        w-fit">
         <a
           href={link}
           rel="noopener noreferrer"
@@ -36,7 +38,7 @@ const ArticleCard = ({ title, link }) => {
 const ArticleLayout = ({ article }) => {
   return (
     <article className="flex justify-between flex-wrap gap-4 border-t border-t-sage-main py-20 px-4">
-      <p className="text-2xl max-w-sm ">{article.category}</p>
+      <p className="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-2xl text-xl max-w-sm ">{article.category}</p>
       <div className="max-w-4xl space-y-24">
         {article.articles.map((data) => (
           <ArticleCard {...data} key={data.title} />
@@ -54,10 +56,10 @@ const AcademicArticlesPage = () => {
         description="Explore a vast collection of scholarly works on various topics with our Academic Articles page. From peer-reviewed research papers to in-depth analyses, find the latest and most relevant academic literature in one convenient location."
       />
       <PageLayout>
-        <h1 className="text-4xl font-black leading-normal mx-auto">
+        <h1 className="text-4xl font-black leading-normal mx-auto px-6">
           Academic Articles
         </h1>
-        <section className="mt-24">
+        <section className="2xl:mt-12 xl:mt-12 lg:mt-12 mt-6 2xl:mx-6 xl:mx-6 lg:mx-6 m-1">
           {academicArticles.map((article) => (
             <ArticleLayout article={article} key={article.category} />
           ))}
