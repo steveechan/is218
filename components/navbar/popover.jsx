@@ -11,7 +11,7 @@ const router= useRouter();
           <Popover.Button className={`flex items-center gap-2 text-sm   focus:outline-none  rounded ${router.asPath.includes(slug) && onClick == null ? "text-sage-accent2" : null} hover:text-sage-accent2 transition`}>
             {name} {open ? <AiFillCaretUp /> : <AiFillCaretDown />}
           </Popover.Button>
-          <Popover.Panel className={`absolute min-w-[${width}px] ${position}-0 mt-4 z-20 ring-1 ring-sage-main rounded`}>
+          <Popover.Panel className={`absolute min-w-[${width}px] ${position}-0 mt-4 z-20 ring-2 ring-sage-main/50 rounded shadow-xl`}>
             <ul className=" p-4 bg-sage-secondary rounded w-full overflow-hidden space-y-4">
               {content.map((data) => <li key={`popover-item-${data.name}`}  >
                     {onClick== null ? <Link href={data.slug} locale={router.locale} className={router.asPath.includes(data.slug) ? "text-sage-accent1" : "hover:text-sage-accent1"}>{data.name}</Link> : 
