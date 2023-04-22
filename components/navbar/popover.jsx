@@ -8,7 +8,7 @@ const router= useRouter();
     <Popover className="relative">
       {({ open }) => (
         <>
-          <Popover.Button className={`flex items-center gap-2 text-sm   focus:outline-none  rounded ${router.asPath.includes(slug) ? "text-sage-accent2" : null} hover:text-sage-accent2 transition`}>
+          <Popover.Button className={`flex items-center gap-2 text-sm   focus:outline-none  rounded ${router.asPath.includes(slug) && onClick == null ? "text-sage-accent2" : null} hover:text-sage-accent2 transition`}>
             {name} {open ? <AiFillCaretUp /> : <AiFillCaretDown />}
           </Popover.Button>
           <Popover.Panel className={`absolute min-w-[${width}px] ${position}-0 mt-4 z-20 ring-1 ring-sage-main rounded`}>

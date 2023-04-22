@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { NavPopover } from "./popover";
-import { AiOutlineSwapRight, AiOutlineMenu } from "react-icons/ai";
-import { BsArrowUpRight} from 'react-icons/bs'
+import { AiOutlineSwapRight, AiOutlineMenu, AiOutlineGlobal } from "react-icons/ai";
+import { BsArrowUpRight, BsGlobe, BsGlobe2} from 'react-icons/bs'
 import { useState } from "react";
 import { NavCollapsible } from "./collapsible";
 import { navData } from "../../lib/data/navdata";
@@ -47,7 +47,7 @@ export default function Navbar() {
         </Link>
         <span>|</span>
         <div>
-            <NavPopover name={"Lang"} content={[{
+            <NavPopover name={<BsGlobe2 className="w-5 h-5 text-sage-accent1" />} content={[{
                 slug: `en`,
                 name:"EN"
             },{
