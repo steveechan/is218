@@ -1,6 +1,5 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { PageLayout } from "../../components/layout";
-import Head from "next/head";
 import { BsArrowUpRight } from "react-icons/bs";
 import { academicArticles } from "../../lib/data/academicArticles";
 import { MetaHeader } from "../../components/common/metaHeader";
