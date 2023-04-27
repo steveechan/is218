@@ -27,13 +27,13 @@ export default function Home(props) {
       height: 600 * 2,
       phi: 0,
       theta: 0,
-      dark: 1,
+      dark: 0.8,
       diffuse: 1.2,
       mapSamples: 12000,
       mapBrightness: 4,
-      opacity: 1,
+      opacity: 0.3,
       baseColor: [0.3, 0.4, 0.3],
-      markerColor: [1.5, 1.5, 1.5],
+      markerColor: [1.2, 1.2, 1.25],
       glowColor: [0.3, 0.4, 0.3],
       markers: [
         // longitude latitude
@@ -85,7 +85,9 @@ export default function Home(props) {
             </p>
             <Button text={t("homepage:heroButton")} />
           </div>
+             <img src="/images/pattern.png" className="absolute w-full -z-10 bottom-0 top-0 h-full" />
           <div className="2xl:relative xl:relative lg:relative md:relative absolute -z-10 right-0 mx-auto w-fit">
+       
             <canvas
               ref={canvasRef}
               style={{

@@ -74,7 +74,7 @@ const MissionAndValues = () => {
       </section>
     </PageLayout>
     </div>
-        <section className="p-4 bg-sage-main">
+        <section className="p-4 bg-sage-main/25">
          <div className="space-y-12 container mx-auto py-12">
             <h4 className="text-2xl font-bold">Our Core Values</h4>
               <ul className=" grid 2xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] grid-cols-1 gap-12">

@@ -2,13 +2,14 @@ import Head from "next/head"
 import { BASE_URL } from "../../lib/constants"
 
 
-export const MetaHeader = ({title = "MyWebclass.org", description, ogImage=`${BASE_URL}/images/meta-image.png`, ogUrl=BASE_URL}) => {
+export const MetaHeader = ({title = "MyWebclass.org", description, ogImage=`${BASE_URL}/images/meta-image.png`, ogUrl=BASE_URL, keywords=""}) => {
     return <Head>
      
      {/* Primary Meta Tags */}
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description}/>
+<meta name="keywords" content={keywords}/>
 
  {/* Open Graph / Facebook */}
 <meta property="og:type" content="website"/>
