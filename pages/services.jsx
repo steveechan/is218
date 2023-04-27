@@ -13,11 +13,11 @@ const ServicesPage = () => {
       />
 
      <PageLayout>
-            <div className="space-y-4 min-w-[250px]">
+            <div className="space-y-4 min-w-[250px] p-4">
                 <p className="text-sage-accent3/60">Services</p>
                 <h1 className="text-4xl">How we can help you</h1>
             </div>
-        <section className="mt-12 flex w-full gap-12 2xl:flex-nowrap xl:flex-nowrap lg:flex-nowrap flex-wrap">
+        <section className="mt-12 flex w-full gap-12 2xl:flex-nowrap xl:flex-nowrap lg:flex-nowrap flex-wrap p-4">
             <div className=" relative ">
             <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" className="object-cover w-full h-full" />
             </div>
