@@ -31,8 +31,18 @@ const BlogPage = ({blogData}) => {
 
 export default BlogPage;
 
-export async function getStaticPaths() {
-  const paths = getAllPostIds()
+export async function getStaticPaths({locales}) {
+
+  const localPaths = getAllPostIds();
+  let paths = [];
+    localPaths.map((path) => {
+        for(const locale of locales) {
+            paths.push({
+                ...path, locale
+            })
+        }
+    })
+
   return {
     paths,
     fallback: false
