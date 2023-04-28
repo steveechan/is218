@@ -6,7 +6,6 @@ author: "Stephen Chan"
 date: "2023/04/01"
 ---
 
-# Javascript
 
 ## JavaScript Essentials: Key Concepts for Every Web Developer
 

@@ -5,9 +5,6 @@ slug: "responsive-web-design"
 author: "Felipe Furtado"
 date: "2023/04/01"
 ---
-
-# Responsive Web Design
-
 ## Embracing Responsive Web Design: A Comprehensive Guide
 
 In today's world, users access the internet from a wide range of devices with varying screen sizes and resolutions. This diversity has made responsive web design (RWD) a crucial aspect of modern web development. In this blog post, we will explore the core principles of responsive design, discuss techniques for achieving it, and offer best practices to ensure your website looks and functions great on every device.

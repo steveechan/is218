@@ -29,8 +29,8 @@ export default function Navbar() {
             <Link
               href={data.slug}
               className={` ${
-                asPath.includes(`/${navName[index]}`)
-                  ? "text-sage-accent2  "
+                asPath.includes(`/${navName[index].toLowerCase()}`)
+                  ? "text-sage-accent2"
                   : null
               } hover:text-sage-accent2 transition-colors`}
               key={`main-${data.name}`}

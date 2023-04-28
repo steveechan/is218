@@ -6,8 +6,6 @@ author: "Stephen Chan"
 date: "2023/04/01"
 ---
 
-# Docker
-
 ## Demystifying Docker: Key Concepts and Best Practices
 
 Docker has transformed the way developers build, package, and deploy applications. This containerization platform simplifies the process of managing dependencies, streamlines development workflows, and ensures consistent application behavior across different environments. In this blog post, we will explore the most important Docker topics, including containers, images, Dockerfiles, Docker Compose, and best practices to help you make the most of this powerful tool.

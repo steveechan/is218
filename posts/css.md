@@ -6,8 +6,6 @@ author: "Stephen Chan"
 date: "2023/04/01"
 ---
 
-# CSS
-
 ## CSS Fundamentals: 4 Key Concepts for Every Web Developer
 
 Cascading Style Sheets (CSS) is a cornerstone technology of the web, responsible for styling and layout of web pages. CSS allows you to create visually appealing and responsive designs, ensuring a consistent and engaging user experience. In this blog post, we will explore four of the most important CSS topics: selectors, properties and values, the box model, and responsive design. Mastering these core concepts will help you build a strong foundation in CSS.

@@ -6,8 +6,6 @@ author: "Felipe Furtado"
 date: "2023/04/01"
 ---
 
-# ReactJS
-
 ## Mastering React: Key Topics Every Developer Should Know
 
 React, a popular JavaScript library created by Facebook, has revolutionized the way developers build modern web applications. With its component-based architecture and efficient rendering, React has become a go-to solution for many developers. In this blog post, we will cover the most important topics you need to understand to become proficient in React, including components, JSX, state, props, and more.
