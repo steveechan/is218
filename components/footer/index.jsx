@@ -21,8 +21,8 @@ const FooterColumn = ({ title, links }) => {
 };
 
 export default function Footer() {
-  const { t } = useTranslation();
-  const footerItems = t("common:footerItems", { returnObjects: true })
+  const { t } = useTranslation("common");
+  const footerItems = t("footerItems", { returnObjects: true })
 
   return (
     <div className="w-full border-t border-t-sage-main/25 p-4 mt-24">
