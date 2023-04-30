@@ -12,9 +12,8 @@ import { useTranslation } from "next-i18next";
 export default function Navbar() {
   const { asPath } = useRouter();
   const [isOpen, setIsOpen] = useState(false);
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   const navName = t("common:navKeys", {returnObjects: true});
-  const router = useRouter();
    
   return (
     <nav className="w-full border-b border-b-sage-main/20">
@@ -42,7 +41,7 @@ export default function Navbar() {
       </div>
       <div className="2xl:flex xl:flex lg:flex items-center gap-4  hidden">
         <Link href={"/"} className="text-xs flex items-center gap-2 bg-sage-main px-4 py-3 rounded-full">
-      {  t("common:navCallToAction")}
+      {t("common:navCallToAction")}
         <AiOutlineSwapRight />
         </Link>
         <span>|</span>
@@ -67,7 +66,7 @@ export default function Navbar() {
               <div className="absolute right-0 bg-sage-secondary ring-2 ring-sage-main/50 shadow-lg  rounded  text-right flex flex-col mt-2 min-w-[250px]">
                 {/* <NavPopover /> */}
                 
-                {navData.map((data) => data.isCollapsible ? <NavCollapsible name={data.name} contents={data.children} key={data.name} /> : <Link href="/" className="text-sm mx-1 my-1 rounded p-3 text-left hover:bg-sage-main flex items-center justify-between " key={data.name}>{data.name}
+                {navData.map((data) => data.isCollapsible ? <NavCollapsible name={data.name} contents={data.children} key={data.name} /> : <Link href={data.slug} className="text-sm mx-1 my-1 rounded p-3 text-left hover:bg-sage-main flex items-center justify-between " key={data.name}>{data.name}
                 <BsArrowUpRight />
                 </Link>)}
               </div> 

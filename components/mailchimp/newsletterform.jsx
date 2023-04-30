@@ -28,7 +28,13 @@ export default function NewsLetterForm({ status, message, onValidated }) {
     const isFormValidated = onValidated({ EMAIL: email });
 
     // On success return true
-    return email && email.indexOf("@") > -1 && isFormValidated;
+    if(email && email.indexOf("@") > -1 && isFormValidated) {
+        setEmail("");
+        return true;
+    } else {
+     setEmail("");
+        return false;
+    }
   };
   const getMessage = (message) => {
     if (!message) {
@@ -52,8 +58,9 @@ export default function NewsLetterForm({ status, message, onValidated }) {
         onSubmit={handleFormSubmit}
       >
         <input
-          className="w-full rounded p-2 bg-neutral-700 border border-neutral-600
-            focus:outline-none focus:ring-1 focus:ring-indigo-500
+          className="w-full rounded p-2 bg-sage-main/80
+            focus:outline-none focus:ring-1 focus:ring-sage-main
+            placeholder:text-sage-accent3/30
             "
           placeholder="Email Address"
           value={email}
@@ -63,7 +70,7 @@ export default function NewsLetterForm({ status, message, onValidated }) {
           disabled={status === "sending"}
         />
         <button
-          className=" bg-indigo-600 p-2 rounded w-full"
+          className=" bg-sage-main/25 ring ring-sage-main/50 p-2 rounded w-full"
           type="submit"
           disabled={status === "sending"}
         >

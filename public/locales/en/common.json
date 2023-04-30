@@ -1,7 +1,68 @@
 {
-    "navKeys": ["Agile & Lean principles","Blog", "Success Stories", "Services", "Resources",
-    "About"
+    "navKeys": [
+        "Agile & Lean principles",
+        "Blog",
+        "Success Stories",
+        "Services",
+        "Resources",
+        "About"
     ],
-    "navCallToAction": "Learn More"
-    
+    "navCallToAction": "Learn More",
+    "footerItems": [
+        {
+            "title": "Website",
+            "links": [
+                {
+                    "title": "Agile & Lean principles",
+                    "link": "/agile-and-lean-principles"
+                },
+                {
+                    "title": "Blog",
+                    "link": "/blog"
+                },
+                {
+                    "title": "Success Stories",
+                    "link": "/success-stories"
+                },
+                {
+                    "title": "Services",
+                    "link": "/services"
+                }
+            ]
+        },
+        {
+            "title": "Resources",
+            "links": [
+                {
+                    "title": "Academic Articles",
+                    "link": "/resources/academic-articles"
+                },
+                {
+                    "title": "Downloadable Guides",
+                    "link": "/resources/downloadable-guides"
+                },
+                {
+                    "title": "Webinars and Workshops",
+                    "link": "/resources/webinars-and-workshops"
+                }
+            ]
+        },
+        {
+            "title": "Company",
+            "links": [
+                {
+                    "title": "Mission and Values",
+                    "link": "/about/mission-and-values"
+                },
+                {
+                    "title": "Meet Our Team",
+                    "link": "/about/meet-our-team"
+                },
+                {
+                    "title": "Partnerships & Affiliations",
+                    "link": "/about/partnerships-and-affiliations"
+                }
+            ]
+        }
+    ]
 }
