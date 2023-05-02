@@ -48,19 +48,16 @@ const ContactUs = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const data = {
-      to_name: name,
-      message: message,
-      to_subject: subject,
-      from_email: email,
-      to_email: email,
-    };
-
-    emailjs.send("service_enc5d1n", "template_zlmo4vh", data).then(
+    emailjs.send("service_enc5d1n", "template_zlmo4vh", {
+        from_subject:subject,
+        to_name: name,
+        message: message,
+        to_email: email
+    }).then(
       (response) => toast.success("Message sent!"),
       (error) => toast.error(error.text ?? "Oops... Something went wrong!")
-    );
-    resetFields();
+    ).finally(() => resetFields());
+    
   };
 
   return (
