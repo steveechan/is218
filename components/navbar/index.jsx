@@ -40,7 +40,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="2xl:flex xl:flex lg:flex items-center gap-4  hidden">
-        <Link href={"/"} className="text-xs flex items-center gap-2 bg-sage-main px-4 py-3 rounded-full">
+        <Link href={"/contact-us"} className="text-xs flex items-center gap-2 bg-sage-main px-4 py-3 rounded-full">
       {t("common:navCallToAction")}
         <AiOutlineSwapRight />
         </Link>

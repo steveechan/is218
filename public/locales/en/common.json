@@ -63,6 +63,16 @@
                     "link": "/about/partnerships-and-affiliations"
                 }
             ]
+        },
+        {
+            "title": "Helpful Links",
+            "links": [
+                {
+                    "title": "Contact Us",
+                    "link": "/contact-us"
+                }
+              
+            ]
         }
     ]
 }
