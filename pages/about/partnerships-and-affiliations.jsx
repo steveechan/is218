@@ -2,9 +2,10 @@ import { PageLayout } from "../../components/layout";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { MetaHeader } from "../../components/common/metaHeader";
+import { useRouter } from "next/router";
 const PartnershipsAndAffiliations = () => {
 
-
+    const router = useRouter();
     return <>
      <MetaHeader
         title="Partnerships and Affiliations"
@@ -18,7 +19,7 @@ const PartnershipsAndAffiliations = () => {
        </div>
         <p className="leading-loose">Our partnerships and affiliations are a vital part of our commitment to providing top-notch agile and lean solutions. We are proud to work with a network of trusted experts who share our values and help us deliver exceptional services to our students.</p>
          <div className="mt-8 ">
-          <button className="flex items-center gap-2 text-sm  bg-sage-main px-8 py-4 rounded-full">
+          <button className="flex items-center gap-2 text-sm  bg-sage-main px-8 py-4 rounded-full" onClick={() => router.push("/contact-us")}>
                 Join our network <AiOutlineSwapRight />{" "}
             </button>
          </div>

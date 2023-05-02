@@ -51,6 +51,9 @@ export default function Footer() {
         </div>
         <SubscribeForm />
       </footer>
+      <div className="border-t w-full container mx-auto border-t-sage-main/50">
+        <p className="my-4 text-xs text-sage-main font-semibold ">MyWebclass.org &copy; 2023.</p>
+      </div>
     </div>
   );
 }
