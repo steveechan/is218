@@ -20,6 +20,7 @@
     "glob": "^9.3.2",
     "gray-matter": "^4.0.3",
     "next": "latest",
+    "nextjs-google-analytics": "^2.3.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
