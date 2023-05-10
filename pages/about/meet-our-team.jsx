@@ -5,21 +5,24 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 
 const teamMembers = [{
-    memberName:"Mr. Miyagi",
-    position: "Software Engineer"}, 
+    memberName:"Stephen Chan",
+    position: "Software Engineer",
+    description: "Stephen Chan is a highly skilled software engineer with expertise in developing cutting-edge applications using various programming languages and frameworks. With a strong focus on AI-driven software development, Stephen enjoys tackling complex problems and devising efficient solutions that push the boundaries of what is possible in the field."
+    }, 
     {
-    memberName:"Mr. Miyagi",
-    position: "UI/UX Designer"
+    memberName:"Felipe Furtado",
+    position: "UI/UX Designer",
+    description: "Felipe Furtado is a talented UI/UX designer with a passion for creating visually stunning and intuitive digital experiences. With a strong focus on user-centered design, Felipe enjoys tackling complex design challenges and finding creative solutions that delight users. As an experienced instructor, Felipe is dedicated to sharing his expertise with aspiring designers and helping them master the art of UI/UX design. Students under his guidance can expect to learn the latest design trends and industry practices, as well as gain valuable insights into the design process and user psychology."
+    
 },
 {
-    memberName:"Mr. Miyagi",
-    position: "Full-Time Instructor"
+    memberName:"Keith Williams",
+    position: "Full-Time Instructor",
+    description: "Keith Williams is a legendary instructor who is widely regarded as the greatest of all time (GOAT) in his field. With a career spanning several decades, Keith has a wealth of experience and knowledge that he brings to every class he teaches. As an instructor, Keith has a unique ability to break down complex concepts into simple and easy-to-understand terms, making even the most challenging topics accessible to students. He is known for his engaging teaching style, infectious enthusiasm, and unwavering commitment to his students' success."
 },{
-    memberName:"Mr. Miyagi",
-    position: "Fullstack Engineer"
-},{
-    memberName:"Mr. Miyagi",
-    position: "Backend Engineer"
+    memberName:"Tisha Madhok",
+    position: "Fullstack Engineer",
+    description: "Tisha is a very good fullstack engineer"
 }
 ]
 
