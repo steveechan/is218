@@ -3,18 +3,14 @@ import { Button } from "../components/common/button";
 import { useRef, useEffect } from "react";
 import createGlobe from "cobe";
 import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { MetaHeader } from "../components/common/metaHeader";
-export const getStaticProps= async ({
-  locale,
-}) => ({
+import Link from "next/link";
+export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'en', [
-      'common',
-      'homepage'
-    ])),
+    ...(await serverSideTranslations(locale ?? "en", ["common", "homepage"])),
   },
-})
+});
 
 export default function Home(props) {
   const canvasRef = useRef();
@@ -51,14 +47,14 @@ export default function Home(props) {
       globe.destroy();
     };
   }, []);
-   const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
-    <MetaHeader
+      <MetaHeader
         title="MyWebclass.org"
         description={t("homepage:description")}
-    />
+      />
       <main className="container mx-auto my-12  h-[80vh] grid place-items-center relative">
         <section className="flex justify-between items-center w-full  relative">
           <div className="max-w-2xl space-y-8 p-4 2xl:text-left xl:text-left lg:text-left md:text-left text-center">
@@ -75,11 +71,17 @@ export default function Home(props) {
             >
               {t("homepage:description")}
             </p>
-            <Button text={t("homepage:heroButton")} />
+            <div className="mt-4">
+              <Link href="/contact-us" >
+                <Button text={t("homepage:heroButton")} />
+              </Link>
+            </div>
           </div>
-             <img src="/images/pattern.png" className="absolute w-full -z-10 bottom-0 top-0 h-full" />
+          <img
+            src="/images/pattern.png"
+            className="absolute w-full -z-10 bottom-0 top-0 h-full"
+          />
           <div className="2xl:relative xl:relative lg:relative md:relative absolute -z-10 right-0 mx-auto w-fit">
-       
             <canvas
               ref={canvasRef}
               style={{
